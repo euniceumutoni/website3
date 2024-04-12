@@ -1,0 +1,122 @@
+/* Color palette */
+:root {
+    --primary-color: #FFF5F8;
+    --secondary-color: #FFD1DC;
+    --accent-color: #000000;
+    --text-color: #000000;
+    --bg-color: #FFFFFF;
+    --input-bg: #f9d0d0;
+    --input-text: #000000;
+  }
+  
+  /* General styles */
+  body {
+    font-family: 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  /* Header and navigation */
+  header {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  nav li {
+    margin: 0 1rem;
+  }
+  
+  nav a {
+    color: var(--accent-color);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: var(--secondary-color);
+  }
+  
+  /* Main content */
+  main {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem; /* Increased padding */
+    flex: 1;
+    background-color: var(--primary-color);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    color: var(--accent-color);
+  }
+  
+  section {
+    margin-bottom: 3rem; /* Increased margin-bottom */
+    text-align: center;
+  }
+  
+  /* Form styles */
+  form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  form label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+  }
+  
+  form input,
+  form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid var(--accent-color);
+    border-radius: 4px;
+    background-color: var(--input-bg);
+    color: var(--input-text);
+  }
+  
+  form button {
+    background-color: var(--secondary-color);
+    color: var(--accent-color);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: var(--accent-color);
+    color: var(--bg-color);
+  }
+  
+  /* Footer */
+  footer {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+  }
